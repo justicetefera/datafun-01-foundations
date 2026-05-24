@@ -98,5 +98,7 @@ def main() -> None:
 
     LOG.info("=== END Justice's Script ===")
 
+# === EXECUTION GUARD ===
+
 if __name__ == "__main__":
     main()
