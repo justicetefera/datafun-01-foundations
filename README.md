@@ -1,3 +1,37 @@
+## Justice’s Script (`app_justice.py`)
+
+`app_justice.py` is my personalized version of the example module used in Project 1.
+It demonstrates my understanding of Python fundamentals by defining variables, organizing code into functions, formatting output, and using logging inside a professional project structure.
+
+### 🔍 Purpose of the Script
+This script shows that I can:
+- Choose clear, descriptive variable names
+- Use multiple Python data types:
+  - Boolean
+  - Integer
+  - Float
+  - String
+  - List of strings
+- Format multi-line output using f-strings
+- Compute simple descriptive statistics
+- Use a shared logging utility (`setup_logging`)
+- Follow a professional Python module layout
+
+### 🧩 What the Script Does
+- Defines several constants representing personal or fictional data
+- Generates a formatted summary using `get_summary()`
+- Computes descriptive statistics using `get_statistics()`
+- Logs all output using the project’s logging configuration
+- Runs through a clean `main()` function with an execution guard
+
+### ▶️ How to Run This Script
+From the project root:
+
+```powershell
+uv run python -m datafun.app_justice
+
+
+
 # datafun-01-foundations
 
 [![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)

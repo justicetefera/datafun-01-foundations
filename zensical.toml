@@ -7,6 +7,8 @@
 # It is used in this project to streamline documentation and provide better support for docstring generation.
 
 [project]
+author = "Justice Tefera"
+author_email = "justfera30@gmail.com"
 site_name = "Data Analytics Fundamentals"
 site_url = "https://denisecase.github.io/datafun-01-foundations/"
 repo_url = "https://github.com/denisecase/datafun-01-foundations"

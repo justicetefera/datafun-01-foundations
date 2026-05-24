@@ -11,7 +11,10 @@
 # ============================================================
 
 [project]
-name = "datafun-01-foundations" # Package distribution name (lowercase and dashes).
+name = "Foundations" # Package distribution name (lowercase and dashes).
+authors = [
+    { name = "Justice Tefera", email = "justfera30@gmail.com" }
+]
 readme = "README.md"
 requires-python = ">=3.14"
 version = "1.0.0"
