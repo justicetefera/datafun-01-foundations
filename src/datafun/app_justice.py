@@ -97,3 +97,6 @@ def main() -> None:
     LOG.info(stats)
 
     LOG.info("=== END Justice's Script ===")
+
+if __name__ == "__main__":
+    main()

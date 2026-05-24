@@ -1,16 +1,22 @@
 import logging
-from pathlib import Path
 
 
-def setup_logging():
-    """Configure basic logging for the project."""
-    log_file = Path("project.log")
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-        handlers=[
-            logging.FileHandler(log_file),
-            logging.StreamHandler()
-        ]
-    )
-    return logging.getLogger(__name__)
+def setup_logging() -> logging.Logger:
+    """Configure and return a logger with console output."""
+
+    logger = logging.getLogger("datafun")
+    logger.setLevel(logging.INFO)
+
+    # Prevent duplicate handlers
+    if not logger.handlers:
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.INFO)
+
+        formatter = logging.Formatter(
+            "%(asctime)s - %(levelname)s - %(message)s"
+        )
+        console_handler.setFormatter(formatter)
+
+        logger.addHandler(console_handler)
+
+    return logger
